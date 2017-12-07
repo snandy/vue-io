@@ -1,6 +1,6 @@
 /*!
  * vue-io.js v1.0.0
- * [object Object] 2017-12-06 17:30:11
+ * [object Object] 2017-12-07 10:51:51
  *
  */
 ;(function(root, factory) {
