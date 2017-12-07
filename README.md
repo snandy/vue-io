@@ -4,21 +4,20 @@ The HTTP for Vue.js，include ajax &amp; jsonp
 ## Ajax API
 
 + 执行基本ajax请求, 返回XMLHttpRequest
-    <pre>
-    Vue.IO.ajax(url, {
-        async      是否异步 true(默认)
-        method     请求方式 POST or GET(默认)
-        type       数据格式 json(默认) or xml, text
-        encode     请求的编码 UTF-8(默认)
-        timeout    请求超时时间 0(默认)
-        credential 跨域请求时是否带证书(默认false，不带http认证信息如cookie)
-        data       请求参数 (字符串或json)
-        scope      成功回调执行上下文
-        success    请求成功后响应函数 参数为text,json,xml数据
-        failure    请求失败后响应函数 参数为xmlHttp, msg, exp
-    })
-    </pre>
-
+```javascript
+Vue.IO.ajax(url, {
+    async      是否异步 true(默认)
+    method     请求方式 POST or GET(默认)
+    type       数据格式 json(默认) or xml, text
+    encode     请求的编码 UTF-8(默认)
+    timeout    请求超时时间 0(默认)
+    credential 跨域请求时是否带证书(默认false，不带http认证信息如cookie)
+    data       请求参数 (字符串或json)
+    scope      成功回调执行上下文
+    success    请求成功后响应函数 参数为text,json,xml数据
+    failure    请求失败后响应函数 参数为xmlHttp, msg, exp
+})
+```
 + 也可只传一个配置对象
     <pre>
     Vue.IO.ajax({
