@@ -1,6 +1,6 @@
 {
 	"name": "vue-io",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The HTTP for Vue.js，include Ajax & JSONP.",
 	"author": {
 	    "name": "snandy",
