@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <title>JSONP API by snandy</title>
+    <script src="vue-2.1.js"></script>
+    <script src="vue-io.js"></script>
+</head> 
+<body>
+<input type="button" value="Get Name 1" onclick="jsonp()"/>
+<input type="button" value="Get Name 2" onclick="ajax()"/>
+<script type="text/javascript">
+    // cookie.set('name', 'snandy')
+    // Sjax.debug = 0;
+
+    function jsonp(){
+        Vue.IO.jsonp('jsonpData.js', {
+            // url : 'jsonpData.js',
+            data : {name:'33',age:44},
+            jsonpCallback: 'jsonpCallback'
+        }).then(function(xx) {
+            console.log(xx)
+        }).catch(function() {
+            console.log('failss')
+        })
+    }
+    function ajax(){
+        Vue.IO.json('jsonData.js', function(obj) {
+            console.log(obj)
+        }).then(function(res) {
+            console.log(res)
+        }).catch(function() {
+            console.log(arguments)
+        })
+    }
+</script>
+</body>
+</html>
+
