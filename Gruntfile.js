@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		
 		var str = '/*!\n';
 		str += ' * <%= pkg.name %>.js v<%= pkg.version %>\n';
-		str += ' * <%= pkg.author %> <%= grunt.template.today("yyyy-mm-dd") %> ' + time + '\n';
+		str += ' * <%= pkg.author.name %> <%= grunt.template.today("yyyy-mm-dd") %> ' + time + '\n';
 		str += ' *\n'
 		str += ' */\n';
 		
